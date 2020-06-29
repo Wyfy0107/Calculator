@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
-import Display from './Display';
-import Button from './Button';
-import ButtonArea from './ButtonArea';
-import CalcButton from './CalcButton';
-import DelButton from './DelButton';
+import './CSS/App.css';
+import Display from './Components/Display';
+import Button from './Components/Button';
+import ButtonArea from './Components/ButtonArea';
+import CalcButton from './Components/CalcButton';
+import DelButton from './Components/DelButton';
 
 class App extends Component {
 	static defaultProps = {
@@ -85,6 +85,7 @@ class App extends Component {
 					key={index}
 					content={val}
 					click={() => this.clickInput(index)}
+					index={index}
 				/>
 			);
 		});
