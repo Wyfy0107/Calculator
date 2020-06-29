@@ -8,22 +8,8 @@ import DelButton from './DelButton';
 
 class App extends Component {
 	static defaultProps = {
-		buttonSign: [
-			'1',
-			'2',
-			'3',
-			'4',
-			'5',
-			'6',
-			'7',
-			'8',
-			'9',
-			'0',
-			'+',
-			'-',
-			'*',
-			'/',
-		],
+		//prettier-ignore
+		buttonSign: ['1','2','3','4','5','6','7','8','9','0','+','-','*','/',],
 		buttonRes: ['=', 'del'],
 	};
 
