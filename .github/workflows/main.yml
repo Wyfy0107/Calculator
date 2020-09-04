@@ -27,10 +27,6 @@ jobs:
         run: npm ci
 
       # Runs a set of commands using the runners shell
-      - name: git congif
-      - run: |
-          git config user.email "nguyenduy010798@gmail.com"
-          git config user.name "wyfy"
 
       - name: deploy
       - run: npm run deploy
