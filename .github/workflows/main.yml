@@ -21,16 +21,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - with:
+          persist-credentials: false
 
       # Runs a single command using the runners shell
       - name: install dependencies
         run: npm ci
 
       # Runs a set of commands using the runners shell
-      - name: git config
-      - run: |
-          git config user.email "nguyenduy010798@gmail.com"
-          git config user.name "wyfy"
 
       - name: deploy
       - run: npm run deploy
