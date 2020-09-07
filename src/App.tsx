@@ -102,7 +102,7 @@ class App extends Component<appProps, appState> {
 
     return (
       <div className='App'>
-        <h1>This is gh action</h1>
+        <h1 style={{color: 'white'}}>This is gh action</h1>
         <Display display={this.state.display} />{" "}
         <ButtonArea a={buttonContent}>
           <CalcButton add={this.calculation} but={this.props.buttonRes[0]} />{" "}
